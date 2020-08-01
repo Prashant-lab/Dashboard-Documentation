@@ -1,0 +1,224 @@
+@font-face {
+             font-family: myFirstFont;
+             src: url(fonts/play-regular.woff2);
+           }
+
+* {
+   font-family: myFirstFont;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	background-color: rgb(20,20,20);
+	padding: 10px;
+	grid-gap: 10px 10px;
+	
+	
+}
+.grid-item {
+	background-color: rgb(35,35,35);
+	border: 1px solid rgb(100,100,100);
+	padding: 5px;
+}
+
+.fullname {
+	background-color:rgb(50,50,50);
+	padding:4px;
+	color: rgb(200,200,200);
+	font-size:14px;
+	
+}
+
+.detail div {
+	float:left;
+	height:100px;
+	width:100px;
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	margin-left:5px;
+	border-radius:50%;
+	
+}
+
+.detail ul {
+	font-size:10px;
+	position:relative;
+	left:30px;
+	bottom:0;
+	list-style-type:none;
+	
+}
+
+
+
+.email:before{
+	content:'';
+	display:inline-block;
+	height:10px;
+	width:10px;
+	background-size:10px;
+	background-image:url(icons/mail.svg);
+	background-repeat:none;
+	margin-right:5px;
+}
+	
+
+.email {
+  
+	color:yellow;
+	margin:5px;
+	padding:5px;
+}
+
+.number:before{
+	content:'';
+	display:inline-block;
+	height:10px;
+	width:10px;
+	background-size:10px;
+	background-image:url(icons/contact.svg);
+	background-repeat:none;
+	margin-right:5px;
+}
+
+.number {
+	color:pink;
+	margin:5px;
+	padding:5px;
+}
+
+.address:before{
+	content:'';
+	display:inline-block;
+	height:10px;
+	width:10px;
+	background-size:10px;
+	background-image:url(icons/address.svg);
+	background-repeat:none;
+	margin-right:5px;
+}  
+
+.address {
+	color:grey;
+	margin:5px;
+	padding:5px;
+}
+
+.DOB:before{
+	content:'';
+	display:inline-block;
+	height:10px;
+	width:10px;
+	background-size:10px;
+	background-image:url(icons/dob.svg);
+	background-repeat:none;
+	margin-right:5px;
+}  
+
+.DOB {
+	color:green;
+	margin:5px;
+	padding:5px;
+}
+#gender:before{
+	content:'';
+	display:inline-block;
+	height:10px;
+	width:10px;
+	background-size:10px;
+	background-image:url(icons/gender.svg);
+	background-repeat:none;
+	margin-right:5px;
+}  
+
+#gender {
+	margin-left:48px;
+	
+}
+
+#age {
+	color:skyblue;
+}
+
+.fullname a:link{
+	color:rgb(200,200,200);
+	text-decoration:none;
+} 
+
+.fullname a {
+	color:rgb(200,200,200);
+}
+
+.fullname a:visited{
+	text-decoration:none;
+}
+
+.fullname a:hover{
+	text-decoration:none;
+}
+
+.fullname a:active{
+	text-decoration:none;
+}
+.grid-item{
+transition: 0.2s;
+}
+.grid-item:hover{
+transform:scale(1.04);
+}
+
+#btn{
+	border-bottom:1px solid rgb(100,100,100);
+	background-color:rgb(20,20,20);
+	text-align:center;
+	padding:10px;
+	z-index:1;
+}
+
+
+#myBtn {
+	color:white;
+	display:inline;
+	background-color:rgb(35,35,35);
+	margin:auto;
+	padding: 10px 15px;
+		
+}
+
+#myBtn:hover{
+	background-color:green;
+	cursor:pointer;
+}
+
+.header{
+	border-bottom:1px solid rgb(100,100,100);
+	background-color:rgb(20,20,20);
+	color:white;
+	padding:5px 10px;
+}
+.header span{
+	position: relative;
+	bottom:7px;
+	margin-left:5px;
+}
+
+.footer{
+	border-top:1px solid rgb(100,100,100);
+	background-color:rgb(20,20,20);
+	color:white;
+	padding:5px 10px;
+}
+
+ #deleteuser{
+	color: #aaaaaa;
+	float: right;
+	font-size: 20px;
+	font-weight: bold;
+ }
+
+ #deleteuser:hover{
+	text-decoration: none;
+	cursor: pointer;
+ }

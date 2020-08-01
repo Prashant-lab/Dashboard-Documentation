@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-us">
+   <head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>index value of clicked element</title>
+   </head>
+   <body>
+       <ul id  = "demo">
+           <li id = "first">prashant</li>
+           <li>amal</li>
+           <li>harsh</li>
+           <li>amrita</li>
+           <li>indranil</li>
+           <li>raghu</li>
+       </ul>
+    <script>
+        var x  = document.getElementById("demo").children;
+        var arr = [];
+        for(var i = 0; i < x.length ; i++)
+        {
+            arr.push(x[i].innerHTML);
+        }
+
+        for( var i = 0; i < x.length; i++)
+        {
+            x[i].onclick = function(){
+                var index = arr.indexOf(this.innerHTML);
+                alert(index);
+            }
+        }
+    
+    </script>
+
+   </body>

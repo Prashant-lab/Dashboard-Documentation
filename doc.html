@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-us">
+   <head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>my 2nd assignment</title>
+        <link rel="stylesheet" type="text/css" href="2ndcss.css">
+		<link rel="stylesheet" type="text/css" href="popup.css">
+		<script src="users.js"></script>
+		<script src="main.js"></script>
+		<script src="cal_age1.js"></script>
+   </head>
+   <body>
+	   <div class = "header"><img src = "images/logo.png" style = "width:30px ; height:30px;"><span>NEC Technology India</span></div>
+		<div id="btn">
+			<p id="myBtn"  onclick = "popup()">ADD</p>
+		</div>
+		<div class="grid-container" id = "container" ></div>
+			<template id="user-template">
+				<div class="grid-item"  id="grid-item">
+					<div class="fullname"><a href = "one.html" target = "_blank">{{FULLNAME}}</a><span id="deleteuser" onclick = "clickCross({{index}});">&times;</span></div>
+					<div class="detail">
+						<div style="background-image: url({{IMAGE}});"></div>
+						<ul>
+							<li class="email"><ins>{{EMAIL}}</ins></li>
+							<li class="number"><ins>{{NUMBER}}</ins></li>
+							<li class="address">{{ADDRESS}}</li>
+							<li class="DOB">{{DOB}}<span id="age">({{AGE}})</span><span id="gender">{{GENDER}}</span></li>
+						</ul>
+					</div>
+				</div>
+			</template>
+		</div>
+		
+		<div id="myModal" class="modal">
+
+			<div class="modalContent">
+		
+				<div class="grid-container1">
+					<div class="grid-item1">
+						<div>
+						<canvas id="myCanvas" style=" height:230px ; max-width:100%; border:1px solid rgb(105, 102, 102);">
+						</div>
+						<div>
+						<button id="choose">Choose Image</button>
+						<div id = "alert"></div>
+						<input type="file", name="filechooser" id="ig" onchange = "renderCanvas()">
+						</div>
+					</div>
+					<div class="grid-item2">
+						<div id="close">&times;</div><br>
+						<form onsubmit="return saveUser()"> 
+							<label>FIRST NAME</label>
+							<input type="text", name="firstname" placeholder="Firstname" id="fn" pattern = "[A-Za-z]+" required>
+							<br><br>
+							<label>LAST NAME</label>
+							<input type="text", name="lastname"  placeholder="Lastname"id="ln"  pattern = "[A-Za-z]+" required>
+							<br><br>
+							<label>EMAIL</label>
+							<input type="email", name="email"  placeholder="Email.id"id="email" required>
+							<br><br>
+							<label>NUMBER</label>
+							<input type="number", name="number"  placeholder="Number"id="num" required>
+							<br><br>
+							<label>ADDRESS</label>
+							<input type="text", name="address" placeholder="Address" id="add" required>
+							<br><br>
+							<label>DOB</label>
+							<input type="date", name="bday"  placeholder="DOB" id="dob" required>
+							<br><br>
+							<label>GENDER</label>
+							<select name = "gender" id="gen"  required >
+								<option disabled selected value>--select an option--</option>
+								<option value="M">M</option>
+								<option value="F">F</option>
+							</select><br><br>
+							<input type ="submit" value ="submit" >
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<input type="button" value="right-click me" id="btn2">-->
+		<div class = "footer">NEC Corporation 2019.All rights reserved<span style = "float:right">support - prashant@india.nec.com</span></div>	
+    </body>
+	
+</html>

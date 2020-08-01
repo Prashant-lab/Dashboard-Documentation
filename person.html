@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us">
+   <head>
+        <meta charset="UTF-8"/>
+        <title>new person detail</title>
+		<link rel="stylesheet" type="text/css" href="person_css.css"/>
+        <script src="users.js"></script>
+        <script src="pushData.js"></script>
+   </head>
+   <script>
+		 function  printImage() {
+				var canvas = document.getElementById("myCanvas");
+				var ctx = canvas.getContext("2d");
+				var img = document.getElementById("photo");
+				ctx.drawImage(img, 10, 10);
+		};
+   </script>
+   
+<body>
+	<div class="grid-container1">
+		<div class="grid-item1">
+			<div>
+			<canvas id="myCanvas" width="240" height="250" style="border:1px solid rgb(100,100,100);">
+			</div>
+			<div>
+			<label for="ig" onload="printImage();">upload image</label>
+			<input type="file", name="filechooser" id="ig" >
+			</div>
+		</div>
+		<div class="grid-item2">
+			<label>FIRST NAME</label>
+			<input type="text", name="firstname" placeholder="Firstname" id="fn">
+			<br><br>
+			<label>LAST NAME</label>
+			<input type="text", name="lastname"  placeholder="Lastname"id="ln">
+			<br><br>
+			<label>EMAIL</label>
+			<input type="email", name="email"  placeholder="Email.id"id="email">
+			<br><br>
+			<label>NUMBER</label>
+			<input type="text", name="number"  placeholder="Number"id="num">
+			<br><br>
+			<label>ADDRESS</label>
+			<input type="text", name="address" placeholder="Address" id="add">
+			<br><br>
+			<label>DOB</label>
+			<input type="date", name="bday"  placeholder="DOB"id="dob">
+			<br><br>
+			<label>GENDER</label>
+			<input list="sex"  id="gen"  placeholder="Gender">
+                    <datalist id="sex">
+                    <option value="M">
+                    <option value="F">
+                    </datalist><br><br>
+			<button onclick="pushData();">SUBMIT</button>
+		</div>
+	</div>
+		
+    </body>
+   

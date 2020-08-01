@@ -1,0 +1,77 @@
+@font-face {
+             font-family: myFirstFont;
+             src: url(fonts/play-regular.woff2);
+           }
+		   
+body {
+	
+}
+
+
+
+.header{
+	font-family:myFirstFont;
+	color:white;
+	background-color:#333;
+	font-size:50px;
+	border:2px solid black;
+	padding:10px;
+}
+
+ul {
+	font-family:Arial;
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	background-color:#333;
+	overflow:hidden;
+}
+
+li {
+	float:left;
+}
+a {
+	display:block;
+	color:white;
+	text-decoration:none;
+	text-align:center;
+	padding:20px;
+}
+
+a:hover{
+	background-color:#111;
+}
+
+.detail{
+	width:100%;
+}
+
+.menu {
+	color:white;
+	text-align:center;
+	float:left;
+	width:15%;
+	background-color:#333;
+	border-top:2px solid black;
+	height:498px
+}
+
+.main {
+	float:left;
+	width:84.9%;
+	background-color:#333;
+	color:white;
+	
+}
+
+.deatil:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+	height:150px;
+	width:150px;
+	border-radius:50%;
+}
